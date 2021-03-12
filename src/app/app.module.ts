@@ -15,10 +15,6 @@ import { Services } from './services';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-  ],
-  providers: [
-    Services,
   ],
   bootstrap: [AppComponent]
 })

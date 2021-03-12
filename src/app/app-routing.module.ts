@@ -5,6 +5,7 @@ import * as PAGES from './pages';
 
 const routes: Routes = [
   { path: '', component: PAGES.HomePageComponent },
+  { path: 'pokedex', loadChildren: () => import('../lazy/pokemon/pokemon.module').then(m => m.PokemonModule) },
 ];
 
 @NgModule({
