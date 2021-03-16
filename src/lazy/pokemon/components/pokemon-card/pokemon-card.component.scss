@@ -1,0 +1,49 @@
+@import '_variables';
+
+.pokemon-card {
+  background-color: $white;
+  margin: $spacer-l;
+  box-shadow: 0px 0px 100px -30px $shadow-color;
+
+  &__sprite {
+    background-color: $secondary-color;
+    height: 100px;
+    width: 300px;
+    position: relative;
+
+    img {
+      height: 250px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: -115px;
+    }
+  }
+
+  &__info {
+    padding: $spacer;
+
+    &__title {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    &__subtitle {
+      font-weight: bold;
+    }
+
+    &__type {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        p {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,11 @@
 <div class="u-container">
-  <h1>Pokedex</h1>
+  <h1>Generaties</h1>
 
   <div class="u-margin-bottom">
     <a routerLink="/" class="u-back-button"><span class="u-back-button__icon">&lt;</span> Terug naar de startpagina</a>
   </div>
 
-  <app-pokemon-list
-    [pokemon]="pokemon$ | async"
-  ></app-pokemon-list>
+  <app-generations-list
+    [generations]="generations$ | async"
+  ></app-generations-list>
 </div>
