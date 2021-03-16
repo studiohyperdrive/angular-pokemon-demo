@@ -43,6 +43,7 @@ export class PokemonService {
               return type?.type?.name;
             }),
             weight: response.weight,
+            sprite: response.sprites.front_default,
           };
         }),
       );

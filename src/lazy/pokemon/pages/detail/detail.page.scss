@@ -1,0 +1,13 @@
+@import '_variables';
+
+.detail {
+  &__title {
+    text-transform: capitalize;
+  }
+
+  &__card {
+    margin: $spacer-l;
+    display: flex;
+    justify-content: center;
+  }
+}

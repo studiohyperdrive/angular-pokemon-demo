@@ -1,0 +1,37 @@
+@import '_variables';
+
+.header {
+  padding: $spacer;
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__main {
+    a {
+      padding: $spacer 0;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__links {
+    a {
+      padding: $spacer;
+      margin-left: $spacer;
+      background-color: $secondary-color;
+      color: $white;
+      box-shadow: 4px 4px 0px 0px $shadow-color;
+      transition: box-shadow .2s ease-in-out;
+
+      &:hover {
+        box-shadow: 2px 2px 0px 0px $shadow-color;
+      }
+    }
+  }
+}
