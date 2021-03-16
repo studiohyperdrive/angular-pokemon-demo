@@ -1,10 +1,6 @@
 <div>
   <h1>Generations</h1>
 
-  <div>
-    <a routerLink="/">&lt; Terug naar de startpagina</a>
-  </div>
-
   <app-generations-list
     [generations]="generations$ | async"
   ></app-generations-list>

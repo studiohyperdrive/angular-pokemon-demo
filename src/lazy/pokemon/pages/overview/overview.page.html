@@ -1,10 +1,6 @@
 <div>
   <h1>Pokedex</h1>
 
-  <div>
-    <a routerLink="/">&lt; Terug naar de startpagina</a>
-  </div>
-
   <app-pokemon-list
     [pokemon]="pokemon$ | async"
   ></app-pokemon-list>
