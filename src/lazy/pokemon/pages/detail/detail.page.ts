@@ -6,7 +6,7 @@ import { IPokemon } from '../../services/pokemon/pokemon.types';
 
 @Component({
   templateUrl: './detail.page.html',
-  // styleUrls: ['./overview.page.scss'],
+  styleUrls: ['./detail.page.scss'],
 })
 export class DetailPageComponent implements OnInit {
   public pokemon$: Observable<IPokemon>;

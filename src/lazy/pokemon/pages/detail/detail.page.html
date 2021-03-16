@@ -1,6 +1,13 @@
-<div class="u-margin-bottom">
-  <a routerLink="../">&lt; Terug naar het overzicht</a>
-</div>
+<div class="u-container">
+  <h1 class="detail__title">{{ (pokemon$ | async)?.name }}</h1>
 
-<!-- Gebruik deze data om een detail pagina op te bouwen met verschillende componenten -->
-<pre> {{ pokemon$ | async | json }}</pre>
+  <div class="u-margin-bottom">
+    <a routerLink="../" class="detail__back-button"><span class="detail__back-button__icon">&lt;</span> Terug naar het overzicht</a>
+  </div>
+
+  <div class="detail__card">
+    <app-pokemon-card
+      [pokemon]="pokemon$ | async"
+    ></app-pokemon-card>
+  </div>
+</div>

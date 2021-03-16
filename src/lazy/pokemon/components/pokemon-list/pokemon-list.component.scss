@@ -4,36 +4,20 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -$spacer;
-}
 
-.pokemon-list__item {
-  width: 100%;
+  &__item {
+    width: 100%;
 
-  @media (min-width: 600px) {
-    width: 50%;
-  }
+    @media (min-width: 600px) {
+      width: 50%;
+    }
 
-  @media (min-width: 900px) {
-    width: 33.3333%;
-  }
+    @media (min-width: 900px) {
+      width: 33.3333%;
+    }
 
-  @media (min-width: 1200px) {
-    width: 25%;
-  }
-}
-
-a {
-  display: block;
-  box-shadow: 1px 1px 4px 0px $card-shadow-color;
-  background-color: $card-bg-color;
-  padding: $spacer;
-  margin: $spacer;
-  text-decoration: none;
-  color: inherit;
-  transition: transform .2s ease-in-out;
-  text-align: center;
-
-  &:hover {
-    transform: scale(1.1);
+    @media (min-width: 1200px) {
+      width: 25%;
+    }
   }
 }
