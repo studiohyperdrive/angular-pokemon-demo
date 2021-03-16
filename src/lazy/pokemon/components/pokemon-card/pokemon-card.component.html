@@ -1,5 +1,14 @@
 <div>
-  <a [routerLink]="pokemon.name">
-    {{ pokemon.name }}
-  </a>
+  <div>
+    <img [src]="pokemon?.sprite" alt="Pokemon sprite">
+  </div>
+  <div>
+    <p>{{ pokemon?.name }}</p>
+    <div>
+      <p>Type:</p>
+      <div>
+        <p *ngFor="let type of pokemon?.types">{{ type }}</p>
+      </div>
+    </div>
+  </div>
 </div>

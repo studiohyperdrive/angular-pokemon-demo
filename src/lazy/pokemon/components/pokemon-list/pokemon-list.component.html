@@ -1,5 +1,7 @@
 <div>
   <ng-container *ngFor="let detail of pokemon">
-    <app-pokemon-card [pokemon]="detail"></app-pokemon-card>
+    <div>
+      <app-pokemon-list-item [pokemon]="detail"></app-pokemon-list-item>
+    </div>
   </ng-container>
 </div>
