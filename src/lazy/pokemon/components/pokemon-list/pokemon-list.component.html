@@ -1,9 +1,5 @@
-<div class="pokemon-list">
-  <ng-container *ngFor="let detail of pokemon ">
-    <div class="pokemon-list__item">
-      <a [routerLink]="detail.name">
-        {{ detail.name }}
-      </a>
-    </div>
+<div>
+  <ng-container *ngFor="let detail of pokemon">
+    <app-pokemon-card [pokemon]="detail"></app-pokemon-card>
   </ng-container>
 </div>

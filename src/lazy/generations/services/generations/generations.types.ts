@@ -1,4 +1,4 @@
-export interface IPokemon {
+export interface IGenerations {
   name: string;
 
   // Optional (detail)
@@ -11,7 +11,7 @@ export interface IPokemon {
   sprite?: string;
 }
 
-export interface IPokemonListResponse {
+export interface IGenerationsListResponse {
   count: number;
   next: string;
   previous: string;
@@ -22,6 +22,6 @@ export interface IPokemonListResponse {
 }
 
 // Todo: specify type based on API response
-export interface IPokemonDetailResponse {
+export interface IGenerationDetailResponse {
   [key: string]: any;
 }
